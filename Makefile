@@ -38,7 +38,7 @@ $(BIN): $(FILE_LIST_F)
 		-Mdir=$(CSRC_DIR) -o $(BIN)
 
 sim: $(BIN)
-	cd $(BUILD_DIR) && ./$(shell basename $^) -verdi\
+	cd $(BUILD_DIR) && ./$(shell basename $^)\
 		 -l $(abspath $(SIM_LOG))
 
 all: default

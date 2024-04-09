@@ -4,7 +4,7 @@ module demo_tb();
 
     //生成波形文件
     initial begin
-        $dumpfile("wave.c");
+        $dumpfile("wave.vcd");
         //	$fsdbDumpfile("wave.fsdb");
         $dumpvars(0, demo_tb);
         //$fsdbDumpvars();
@@ -33,7 +33,7 @@ module demo_tb();
     initial begin
         rst = 1;  //使能复位
         #50  rst = 0;
-        #500 $stop;   //停止仿真
+        #500 $finish;   //停止仿真
     end
 
     //实例化待测模块

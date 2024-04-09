@@ -1,0 +1,49 @@
+
+{
+
+    
+
+        "prjName": {
+            "PL": "template",
+            "PS": "template"
+        },
+    
+ 
+        "arch" : {
+            "prjPath": "${workspace}",
+            "hardware" : {
+                "src"  : "${workspace}", 
+                "sim"  : "${workspace}", 
+                "data" : ""   
+            },
+            "software" : {
+                "src"  : "",
+                "data" : ""
+            }
+        },
+    
+        
+        
+        "library" : {
+            "state": "remote",
+            "hardware" : {
+                "common": [], 
+                "custom": []  
+            }
+        },
+
+        "IP_REPO" : [],
+    
+  
+        "soc": {
+            "core": "none",
+            "bd": "",
+            "os": "",
+            "app": ""
+        },
+    
+        "enableShowLog": false,
+    
+
+        "device": "none"
+    }
