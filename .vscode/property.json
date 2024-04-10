@@ -10,10 +10,10 @@
     
  
         "arch" : {
-            "prjPath": "${workspace}",
+            "prjPath": "",
             "hardware" : {
-                "src"  : "${workspace}", 
-                "sim"  : "${workspace}", 
+                "src"  : "./vsrc", 
+                "sim"  : "./tb", 
                 "data" : ""   
             },
             "software" : {
