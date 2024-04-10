@@ -12,7 +12,7 @@
         "arch" : {
             "prjPath": "",
             "hardware" : {
-                "src"  : "./vsrc", 
+                "src"  : "./vsrc",  
                 "sim"  : "./tb", 
                 "data" : ""   
             },
