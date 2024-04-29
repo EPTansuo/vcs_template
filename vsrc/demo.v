@@ -1,24 +1,22 @@
-`timescale 1ns/1ps
-
 module demo(
         input clk,
         input rst,
         input wire a,
-        output reg w
+        output wire w
     );
 
-    reg [2:0] buffer; //è¦æ£€æµ‹çš„åºåˆ—é•¿åº¦ä¸º3
+    reg [2:0] buffer; //Òª¼ì²âµÄĞòÁĞ³¤¶ÈÎª3
 
     always @(posedge clk) begin
         if(rst) begin
             buffer <= 3'b0;
-            w <= 1'b0;
         end
         else begin
             buffer <= {buffer[1:0], a};
-
-            //ç›¸å½“äº w = ( æ›´æ–°åçš„buffer == 3'b101)
-            w <=  (buffer[1] & (~buffer[0]) & a);
         end
     end
+
+assign w = (buffer == 3'b101);
+
 endmodule
+
